@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ app_name }}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <main class="shell">
+        <section class="hero">
+            <p class="eyebrow">Python AI Workspace</p>
+            <h1>{{ app_name }}</h1>
+            <p class="lede">
+                A sleek browser chatbox built with FastAPI, a configurable LLM backend,
+                and a UI that feels more like a product than a demo.
+            </p>
+        </section>
+
+        <section class="chat-panel">
+            <div id="messages" class="messages">
+                <article class="message assistant">
+                    <span class="badge">AI</span>
+                    <p>Hello. Ask me about Python, project ideas, or connect me to a real LLM with environment variables.</p>
+                </article>
+            </div>
+
+            <form id="chat-form" class="composer">
+                <textarea id="message-input" name="message" rows="3" placeholder="Type your message..."></textarea>
+                <div class="composer-bar">
+                    <p class="hint">Default mode is mock, so the app works even before adding an API key.</p>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
+
