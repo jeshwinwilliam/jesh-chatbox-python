@@ -25,3 +25,16 @@ async def home(request: Request) -> HTMLResponse:
         context={"app_name": get_settings().app_name},
     )
 
+
+
+
+
+
+
+
+
+
+
+
+
+
