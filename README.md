@@ -26,3 +26,10 @@ graph LR
     Router <--> Logic
     Logic <-->|Default| Mock
     Logic <-->|Configured| Remote
+
+
+
+
+
+
+
